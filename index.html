@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Tantoy Shop – Everyday objects for the home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap"
+    >
+</head>
+
+<body>
+
+    <input type="checkbox" id="cart-toggle" aria-label="Toggle cart">
+
+    <!-- Header -->
+    <header>
+        <div class="wrap bar">
+
+            <a class="logo" href="#top">Tantoy Shop</a>
+
+            <nav aria-label="Main">
+                <a href="#shop">Shop</a>
+                <a href="#collections">Collections</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#footer">Help</a>
+            </nav>
+
+            <label class="cart-btn" for="cart-toggle">
+                Cart <b>2</b>
+            </label>
+
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main id="top">
+
+        <!-- Hero section -->
+        <section class="wrap hero">
+
+            <div>
+                <h1>Things you’ll use every day.</h1>
+
+                <p>
+                    Hand-finished ceramics, linen and small-batch kitchenware,
+                    made to be used, washed and used again. Free delivery over ₱60.
+                </p>
+
+                <a class="btn" href="#shop">Shop the range</a>
+                <a class="btn alt" href="#collections">Browse collections</a>
+            </div>
+
+            <div class="stack" aria-hidden="true">
+                <i class="a">🍵</i>
+                <i class="b">🪴</i>
+                <i class="c">🕯️</i>
+            </div>
+
+        </section>
+
+        <!-- Benefits strip -->
+        <div class="wrap strip">
+
+            <div>
+                🚚
+                <span>
+                    <strong>Free delivery</strong> on orders over ₱60
+                </span>
+            </div>
+
+            <div>
+                ↩️
+                <span>
+                    <strong>30-day returns</strong> on every item
+                </span>
+            </div>
+
+            <div>
+                🔒
+                <span>
+                    <strong>Secure checkout</strong> with all major cards
+                </span>
+            </div>
+
+        </div>
+
+        <!-- Shop section -->
+        <section class="wrap shop" id="shop">
+
+            <!-- Category filters -->
+            <input type="radio" name="cat" id="c-all" checked>
+            <input type="radio" name="cat" id="c-kitchen">
+            <input type="radio" name="cat" id="c-living">
+            <input type="radio" name="cat" id="c-sleep">
+
+            <h2>Shop all products</h2>
+
+            <p class="sub">Choose a room to narrow the list.</p>
+
+            <div class="filters" role="group" aria-label="Filter by room">
+                <label for="c-all">All</label>
+                <label for="c-kitchen">Kitchen</label>
+                <label for="c-living">Living</label>
+                <label for="c-sleep">Bedroom</label>
+            </div>
+
+            <!-- Product grid -->
+            <div class="grid">
+
+                <!-- Product 1 -->
+                <article class="p kitchen">
+                    <div class="img">
+                        <img src="./images/mug.jpg">
+                        <span class="tag">Bestseller</span>
+                    </div>
+
+                    <div class="info">
+                        <h3>Stoneware mug</h3>
+                        <p class="meta">Speckled glaze · 350 ml</p>
+
+                        <div class="row">
+                            <span class="price">₱98</span>
+                            <a class="add" href="#cart" onclick="return false">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="p kitchen">
+                    <div class="img">
+                      <img src=".//images/bowl.jpg">
+                    </div>
+
+                    <div class="info">
+                        <h3>Serving bowl</h3>
+                        <p class="meta">Hand-thrown · dishwasher safe</p>
+
+                        <div class="row">
+                            <span class="price">₱167</span>
+                            <a class="add" href="#cart" onclick="return false">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="p kitchen">
+                    <div class="img">
+                        <img src="./images/knife.jpg">
+                        <span class="tag">New</span>
+                    </div>
+
+                    <div class="info">
+                        <h3>Chef’s knife</h3>
+                        <p class="meta">Carbon steel · 20 cm</p>
+
+                        <div class="row">
+                            <span class="price">₱108</span>
+                            <a class="add" href="#cart" onclick="return false">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="p kitchen">
+                    <div class="img">
+                      <img src="./images/pot.jpg">
+                    </div>
+
+                    <div class="info">
+                        <h3>Enamel teapot</h3>
+                        <p class="meta">Holds 900 ml</p>
+
+                        <div class="row">
+                            <span class="price">
+                                ₱46
+                                <s>₱259</s>
+                            </span>
+
+                            <a class="add" href="#cart" onclick="return false">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 5 -->
+                <article class="p living">
+                    <div class="img">
+                      <img src="./images/planter.jpg">
+                    </div>
+
+                    <div class="info">
+                        <h3>Terracotta planter</h3>
+                        <p class="meta">With drainage saucer</p>
+
+                        <div class="row">
+                            <span class="price">₱116</span>
+                            <a class="add" href="#cart" onclick="return false">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 6 -->
+                <article class="p living">
+                    <div class="img">
+                        <img src="./images/candle.jpg">
+                        <span class="tag">Bestseller</span>
+                    </div>
+
+                    <div class="info">
+                        <h3>Soy candle</h3>
+                        <p class="meta">Cedar &amp; fig · 40 hr burn</p>
+
+                        <div class="row">
+                            <span class="price">₱22</span>
+                            <a class="add" href="#cart" onclick="return false">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 7 -->
+                <article class="p living">
+                    <div class="img">
+                      <img src="./images/frame.jpg">
+                    </div>
+
+                    <div class="info">
+                        <h3>Oak picture frame</h3>
+                        <p class="meta">A4 · solid wood</p>
+
+                        <div class="row">
+                            <span class="price">₱129</span>
+                            <a class="add" href="#cart" onclick="return false">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 8 -->
+                <article class="p sleep">
+                    <div class="img">
+                        <img src="./images/cover.jpg">
+                        <span class="tag">New</span>
+                    </div>
+
+                    <div class="info">
+                        <h3>Linen duvet cover</h3>
+                        <p class="meta">Stone wash · queen</p>
+
+                        <div class="row">
+                            <span class="price">₱590</span>
+                            <a class="add" href="#cart" onclick="return false">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Collections section -->
+        <section class="wrap sec" id="collections">
+
+            <h2>Shop by collection</h2>
+            <p class="sub">Three starting points for a calmer home.</p>
+
+            <div class="cols">
+
+                <a class="col" href="#shop">
+                    <span>🍽️</span>
+                    <h3>The slow breakfast</h3>
+                    <p>Mugs, bowls and a teapot that earn their counter space.</p>
+                </a>
+
+                <a class="col" href="#shop">
+                    <span>🌿</span>
+                    <h3>Green corners</h3>
+                    <p>Planters and light for every windowsill.</p>
+                </a>
+
+                <a class="col" href="#shop">
+                    <span>🌙</span>
+                    <h3>Early nights</h3>
+                    <p>Linen, candles and quiet things for the bedroom.</p>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Reviews section -->
+        <section class="wrap sec" id="reviews">
+
+            <h2>What customers say</h2>
+            <p class="sub">Rated 4.8 out of 5 across 2,300 orders.</p>
+
+            <div class="quotes">
+
+                <blockquote>
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        The mug is heavier than I expected and I love it.
+                        It has survived a month of daily dishwasher cycles.
+                    </p>
+                    <cite>Maya R., Cebu</cite>
+                </blockquote>
+
+                <blockquote>
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        The duvet cover softened after the first wash.
+                        Delivery took three days and the packaging was plastic-free.
+                    </p>
+                    <cite>Jonas T., Manila</cite>
+                </blockquote>
+
+                <blockquote>
+                    <div class="stars">★★★★☆</div>
+                    <p>
+                        The knife holds an edge well. I’d like a longer handle
+                        option, but the balance is excellent.
+                    </p>
+                    <cite>Priya S., Davao</cite>
+                </blockquote>
+
+            </div>
+        </section>
+
+        <!-- Newsletter section -->
+        <section class="wrap">
+
+            <div class="news">
+
+                <div>
+                    <h2>Get 10% off your first order</h2>
+                    <p>New arrivals and restocks, once a month.</p>
+                </div>
+
+                <form action="#" onsubmit="return false">
+                    <input
+                        type="email"
+                        placeholder="jairah@uflix.com.ph"
+                        aria-label="Email address"
+                        required
+                    >
+
+                    <button type="submit">Subscribe</button>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+        <div class="wrap">
+
+            <div class="fgrid">
+
+                <!-- Brand -->
+                <div>
+                    <a class="logo" href="#top">Tantoy Shop</a>
+                    <p>Everyday objects for the home, made to last.</p>
+                </div>
+
+                <!-- Shop links -->
+                <div>
+                    <h4>Shop</h4>
+
+                    <ul>
+                        <li><a href="#shop">Kitchen</a></li>
+                        <li><a href="#shop">Living</a></li>
+                        <li><a href="#shop">Bedroom</a></li>
+                    </ul>
+                </div>
+
+                <!-- Help links -->
+                <div>
+                    <h4>Help</h4>
+
+                    <ul>
+                        <li><a href="#footer">Delivery</a></li>
+                        <li><a href="#footer">Returns</a></li>
+                        <li><a href="#footer">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company links -->
+                <div>
+                    <h4>Company</h4>
+
+                    <ul>
+                        <li><a href="#footer">Our story</a></li>
+                        <li><a href="#footer">Care guides</a></li>
+                        <li><a href="#footer">Careers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p class="copy">
+                © 2026 Tantoy Shop. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- Cart overlay -->
+    <label class="scrim" for="cart-toggle" aria-hidden="true"></label>
+
+    <!-- Shopping cart drawer -->
+    <aside class="drawer" aria-label="Shopping cart">
+
+        <header>
+            <h2>Your cart (2)</h2>
+
+            <label class="close" for="cart-toggle" aria-label="Close cart">
+                ×
+            </label>
+        </header>
+
+        <div class="items">
+
+            <div class="item">
+                <i><img src="./images/mug.jpg" class="checkkk"></i>
+
+                <div>
+                    <strong>Stoneware mug</strong>
+                    <p>Qty 1</p>
+                </div>
+
+                <b>₱98</b>
+            </div>
+
+            <div class="item">
+                <i><img src="./images/candle.jpg" class="checkkk"></i>
+
+                <div>
+                    <strong>Soy candle</strong>
+                    <p>Qty 1</p>
+                </div>
+
+                <b>₱22</b>
+            </div>
+
+        </div>
+
+        <div class="total">
+            <span>Subtotal</span>
+            <span>₱120</span>
+        </div>
+
+        <a class="btn" href="#cart" onclick="return false">
+            Check out
+        </a>
+
+    </aside>
+
+</body>
+</html>
